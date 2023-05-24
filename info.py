@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = int(environ['23501167'])
+API_HASH = environ['72f7270a1b4bd3ee93629a396ebb5004']
+BOT_TOKEN = environ['6086063826:AAH8dLU3zIYVW4lucm3OP2tNNZYdvZafgbM']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -59,7 +59,7 @@ FLOOD = int(environ.get("FLOOD", "10"))
 LAZY_MODE = bool(environ.get("LAZY_MODE"))
 #Add user id of the user in this field those who you want to be Authentic user for file renaming features
 lazy_renamers = [int(lazrenamers) if id_pattern.search(lazrenamers) else lazrenamers for lazrenamers in environ.get('LAZY_RENAMERS', '').split()]
-LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else []
+LAZY_RENAMERS = (OMG_KUNDAN + ADMINS) if lazy_renamers else []
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL'))
 
 #ai
@@ -67,11 +67,11 @@ AI = is_enabled((environ.get("AI","True")), False)
 OPENAI_API = environ.get("OPENAI_API","")
 LAZY_AI_LOGS = int(environ.get("LAZY_AI_LOGS","")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of LazyPrincess ]
 # Requested Content template variables ---
-ADMIN_USRNM = environ.get('ADMIN_USRNM','real_heros') # WITHOUT @
-MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','Channel_UserName') # WITHOUT @
-DEV_CHANNEL_USRNM = environ.get('DEV_CHANNEL_USRNM','LayDeveloperr') # WITHOUT @
+ADMIN_USRNM = environ.get('OMG_KUNDAN','real_heros') # WITHOUT @
+MAIN_CHANNEL_USRNM = environ.get('movie_downloader_channel','Channel_UserName') # WITHOUT @
+DEV_CHANNEL_USRNM = environ.get('movie_downloader_channel','LayDeveloperr') # WITHOUT @
 LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','LayDeveloperr')  # WITHOUT @ [  add only handle - don't add full url  ] 
-MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "+qAxoGBvSc34yNmU1") #[ without @ ]
+MOVIE_GROUP_USERNAME = environ.get('movie_downloader_channel', "+qAxoGBvSc34yNmU1") #[ without @ ]
 
 # Url Shortner
 URL_MODE = is_enabled((environ.get("URL_MODE","True")), False)
